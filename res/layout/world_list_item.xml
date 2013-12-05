@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip">
+ 
+    <!-- SQLite row id / hidden by default -->
+    <TextView android:id="@+id/sqlite_idw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+ 
+    <!-- web site title -->
+    <TextView
+        android:id="@+id/titlew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip"
+        android:textSize="18dip"
+        android:textColor="#1a1a1a"
+        android:textStyle="normal"  />
+ 
+    <!-- web site url -->
+    <TextView android:id="@+id/linkw"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dip"
+        android:paddingBottom="6dip"
+        android:textSize="15dip"
+        android:textColor="#818181"
+        android:layout_below="@id/titlew"/>
+ 
+    <!-- Right end Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>

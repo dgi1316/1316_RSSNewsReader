@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rssnews"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+	
+    <application android:name=".ApplicationContextProvider"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/android:Theme.Light">
+        <activity
+            android:label="@string/app_name"
+            android:name=".SplashScreen"
+            android:theme="@style/android:Theme.Light.NoTitleBar"  >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RSSNewsReaderPBActivity" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".India_News" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".World_News" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".Favourites_News" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".RSS_News" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".DisPlayWebPageActivity" />
+        <activity android:name=".ListRSSItemsActivity" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".RSSDatabaseHandler" />
+        <activity android:name=".RSSFeed" />
+        <activity android:name=".RSSItem" />
+        <activity android:name=".RSSParser" />
+        <activity android:name=".WebSite" />
+        <activity android:name=".WorldListRSSItemsActivity" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".AddNewFeed" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".About" android:theme="@style/android:Theme.Light.NoTitleBar"  />
+        <activity android:name=".RSSListRSSItemsActivity" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name=".FavListRSSItemsActivity" android:theme="@style/android:Theme.Light.NoTitleBar" />
+        <activity android:name="." />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

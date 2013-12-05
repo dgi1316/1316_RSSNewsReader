@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dip"
+        android:text="Enter URL (http://xyz.com)"
+        android:textSize="18dip"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter website url"
+        android:inputType="textUri"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUrl"
+        android:layout_centerHorizontal="true"
+        android:minHeight="50dp"
+        android:textSize="16dip"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/list_selector"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:minHeight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/list_selector"
+        android:text="Cancel"
+        android:textSize="16dip"
+        android:windowSoftInputMode="stateVisible|adjustPan" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnCancel"
+        android:textSize="16dip"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dip"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>

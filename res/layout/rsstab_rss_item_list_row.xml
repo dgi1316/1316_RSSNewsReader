@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dip" >
+    
+    <TextView android:id="@+id/page_urlrt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+ 
+    <!-- Article title -->
+    <TextView
+        android:id="@+id/titlert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dip"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:textColor="#1a1a1a" />
+    
+    <!-- published date -->
+    <TextView 
+        android:id="@+id/pub_datert"
+        android:layout_below="@id/titlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dip"
+        android:textSize="14dip"
+        android:textColor="#303030"/>
+ 
+    <!-- article description -->
+    <TextView android:id="@+id/linkrt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingBottom="6dip"
+        android:textSize="15dip"
+        android:textColor="#818181"
+        android:layout_below="@id/pub_datert"/>
+</RelativeLayout>

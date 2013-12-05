@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, RSSNewsReaderPBActivity!</string>
+    <string name="app_name">RSSNewsReaderPB</string>
+	<string name="add">Add</string>
+    <string name="quit">Quit</string>
+	<string name="about">About</string>
+        
+</resources>
